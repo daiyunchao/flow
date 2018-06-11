@@ -1,5 +1,6 @@
 import { observable, computed, autorunAsync, action, extendObservable } from "mobx";
 import ModelBase from '../../CommonStore/ModelBase';
+import GSModel from '../../CommonStore/GSModel'
 class MainModel extends ModelBase {
     constructor() {
         super();
@@ -40,12 +41,12 @@ class MainModel extends ModelBase {
 
     getNewHeight() {
         let self = this;
-        let height = window.innerHeight;
+        let height = GSModel.baseInfoSetting.minHeight;
         let resizeTimer;
         let eqCount = 0;
         let oldHeight = 0;
         resizeTimer = setInterval(function () {
-            let newHeight = window.innerHeight;
+            let newHeight = GSModel.baseInfoSetting.minHeight;
             // console.log("newHeight===>",newHeight);
             if (newHeight != height) {
                 //找到了新的值

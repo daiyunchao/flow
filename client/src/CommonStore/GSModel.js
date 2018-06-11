@@ -11,6 +11,9 @@ class GSModle {
     baseInfoSetting = {
         userId: "",
         routerPathPrex: "/proccess",
+        minHeight: function () {
+            return document.body.scrollHeight
+        }
     }
     init() {
         let currentUrl = window.location.href;

@@ -4,6 +4,7 @@ import Model from '../store/CurrentContentModel';
 import CreateContentBelong from './CreateContentBelong';
 import CreateContentItem from './CreateContentItem';
 import EventHandler from '../../CommonUtils/eventHandler';
+import GSModel from '../../CommonStore/GSModel'
 import PropTypes from 'prop-types';
 import '../../index.css'
 import { observer } from 'mobx-react';
@@ -75,7 +76,7 @@ export default class EditContent extends React.Component {
 
 
                     </div>}
-                style={{ background: "rgba(255,255,255,0.7)", "minHeight": window.innerHeight - 75 }}>
+                style={{ background: "rgba(255,255,255,0.7)", "minHeight": GSModel.baseInfoSetting.minHeight - 75 }}>
                 <CreateContentBelong {...Model.data}></CreateContentBelong>
                 {contentHTML}
                 <Row>

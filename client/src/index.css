@@ -72,10 +72,14 @@ body{font-size:12px;font-family: sans-serif;background:#fff;-webkit-text-size-ad
       top: 0;
       bottom: 0;
       left: 12.5%;
+      overflow-y: scroll;
+      height:959px;
     }
     .cotnentCon{
         width:98%;
+        height:100%;
         margin:0 auto;
+        overflow-y: scroll;
     }
     .createFolderName{
         margin-right: 20px;
@@ -88,6 +92,13 @@ body{font-size:12px;font-family: sans-serif;background:#fff;-webkit-text-size-ad
       overflow-x: hidden;
       height: 100%;
     }
+    .contentMain{
+        margin-left: 29%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 959px;
+    }
   
     .contentCon .ant-menu-root::-webkit-scrollbar{
         width:3px;
@@ -95,10 +106,29 @@ body{font-size:12px;font-family: sans-serif;background:#fff;-webkit-text-size-ad
     .contentCon .ant-menu-root::-webkit-scrollbar-thumb{
       background:#3DB6A4
     }
+    .cotnentCon::-webkit-scrollbar{
+        width:3px;
+    }
+    .cotnentCon::-webkit-scrollbar-thumb{
+      background:#3DB6A4
+    }
+    .contentList::-webkit-scrollbar{
+        width:3px;
+    }
+    .contentList::-webkit-scrollbar-thumb{
+      background:#3DB6A4
+    }
+     .shareContentMain::-webkit-scrollbar{
+        width:3px;
+    }
+    .shareContentMain::-webkit-scrollbar-thumb{
+      background:#3DB6A4
+    }
     .menu_{
       position: absolute;
       top: 0;
       bottom: 0;
+      height: 959px;
     }
 
     .headerCon{
@@ -199,5 +229,9 @@ body{font-size:12px;font-family: sans-serif;background:#fff;-webkit-text-size-ad
   .shareContentMain{
       width:800px;
       margin:0 auto;
+      overflow-y: scroll;
       background: rgba(255,255,255,0.7);
+  }
+  .shareContentMain .ant-card{
+      height:100%
   }

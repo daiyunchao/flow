@@ -12,7 +12,9 @@ export default class Headers extends React.Component {
             <div className="headerCon">
                 <Row>
                     <Col span={4}>
-                        <a id="logo" href="/main">
+                        <a id="logo" onClick={() => {
+                            window.location.reload();
+                        }}>
                             <img src="./images/logo_4.png" style={{ height: "auto" }} />
                         </a>
                     </Col>

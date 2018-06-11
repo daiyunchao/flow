@@ -3,6 +3,7 @@ import '../../index.css'
 //该page的Model
 import Model from '../../CommonStore/UserModel'
 import CommonModal from '../../CommonModal/store/CommonModal';
+import GSModel from '../../CommonStore/GSModel'
 import { observer } from 'mobx-react';
 import { Form, Input, Tooltip, Icon, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete } from 'antd';
 const FormItem = Form.Item;
@@ -105,7 +106,7 @@ class RegistrationForm extends React.Component {
             "background": "url(./images/bg-white-lock.png) repeat",
         }
         return (
-            <div style={{ "height": window.innerHeight, "backgroundColor": "rgba(220, 220, 220, 0.216)", "opacity": "0.99" }}>
+            <div style={{ "height": GSModel.baseInfoSetting.minHeight, "backgroundColor": "rgba(220, 220, 220, 0.216)", "opacity": "0.99" }}>
                 <div className="registerCon">
                     <div className="loginItemConHead">
                         <img src="./images/logo_s_m.png" style={{ "height": 21 }} />

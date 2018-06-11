@@ -257,11 +257,11 @@ class ContentModel extends ModelBase {
         let nodes = document.getElementsByClassName("contentListItem");
         for (let i = 0; i < nodes.length; i++) {
             let node = nodes[i];
-            node.style.borderRight = 0;
+            node.style.backgroundColor = "";
         }
         let currentNode = document.getElementsByClassName("listItem_" + this.data.flowProcessId);
         if (currentNode.length > 0) {
-            currentNode[0].style.borderRight = "2px solid #1890ff";
+            currentNode[0].style.backgroundColor = "rgba(243, 236, 236,0.6)";
         }
     }
 

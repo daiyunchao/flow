@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Icon, Input, Button, Checkbox, Modal } from 'antd';
+import GSModel from '../../CommonStore/GSModel'
 import '../../index.css'
 
 //该page的Model
@@ -36,7 +37,7 @@ export default class Login extends React.Component {
         }
         return (
             <div style={{
-                "height": window.innerHeight,
+                "height": GSModel.baseInfoSetting.minHeight,
                 "backgroundColor": "rgba(220, 220, 220, 0.216)",
                 "opacity": "0.99"
             }}>

@@ -48,13 +48,13 @@ export default class Main extends React.Component {
                 <Header></Header>
                 <div className="contentCon" style={{  "marginTop": 5 }}>
                     <Row >
-                        <Col span={3} className="menu_">
+                        <Col span={3} className="menu_" style={{height:window.innerHeight-70}}>
                             <Menu></Menu>
                         </Col>
-                        <Col span={4} className="contentList">
+                        <Col span={4} className="contentList" style={{height:window.innerHeight-70}}>
                             <ContentList></ContentList>
                         </Col>
-                        <Col span={24 - 3 - 4} style={{marginLeft:"29%" }}>
+                        <Col span={24 - 3 - 4} className="contentMain" style={{height:window.innerHeight-70}}>
                             {contentHtml}
                         </Col>
                     </Row>

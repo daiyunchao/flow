@@ -7,6 +7,7 @@ import EventHandler from '../../CommonUtils/eventHandler';
 import CommHelper from '../../CommonUtils/commHelper';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import CommonModal from '../../CommonModal/store/CommonModal';
+import GSModel from '../../CommonStore/GSModel'
 import '../../index.css'
 import { observer } from 'mobx-react';
 @observer
@@ -18,7 +19,7 @@ export default class ShareContentModel extends React.Component {
     render() {
         if (Model.status.contentHasError) {
             return (
-                <div className="shareContentMain" style={{ "minHeight": window.innerHeight }}>
+                <div className="shareContentMain" style={{ "height": window.innerHeight }}>
                     <div style={{
                         "textAlign": "center",
                         "paddingTop": "30%",
@@ -46,7 +47,7 @@ export default class ShareContentModel extends React.Component {
             });
 
             return (
-                <div className="shareContentMain" style={{ "minHeight": window.innerHeight }}>
+                <div className="shareContentMain" style={{ "height": window.innerHeight }}>
                     <Card
                         title={<div style={{ "fontSize": 25, }}>{this.model.data.title}</div>}
                         style={{ background: "rgba(255,255,255,0.8)" }}>
@@ -57,7 +58,7 @@ export default class ShareContentModel extends React.Component {
             )
         } else {
             return (
-                <div className="shareContentMain" style={{ "minHeight": window.innerHeight }}>
+                <div className="shareContentMain" style={{ "height": window.innerHeight }}>
                     <div style={{
                         "textAlign": "center",
                         "paddingTop": "30%",

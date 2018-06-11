@@ -5,6 +5,7 @@ import ContentItem from './ContentItem';
 import ContentBelong from './ContentBelong';
 import EventHandler from '../../CommonUtils/eventHandler';
 import CommHelper from '../../CommonUtils/commHelper';
+import GSModel from '../../CommonStore/GSModel'
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import CommonModal from '../../CommonModal/store/CommonModal';
 import MainModel from '../../Main/store/MainModel';
@@ -84,7 +85,7 @@ export default class ContentModel extends React.Component {
                                 删除
                             </a>
                         </div>}
-                    style={{ background: "rgba(255,255,255,0.8)", "minHeight": window.innerHeight - 75 }}>
+                    style={{ background: "rgba(255,255,255,0.8)", minHeight: "100%" }}>
                     {contentListHtml}
                     <ContentBelong {...this.model.data} changeShareStatus={
                         (isShared) => {
@@ -94,7 +95,7 @@ export default class ContentModel extends React.Component {
             )
         } else {
             return (
-                <div style={{ background: "rgba(255,255,255,0.7)", "minHeight": window.innerHeight - 75 }}>
+                <div style={{ background: "rgba(255,255,255,0.7)", "height": "100%" }}>
                     <div style={{ "textAlign": "center", "paddingTop": "30%", "fontSize": 25 }}>
                         <span>还没有任何流程,</span><a onClick={() => {
                             MainModel.changeStatus({
