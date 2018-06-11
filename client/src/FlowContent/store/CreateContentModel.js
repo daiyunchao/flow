@@ -5,7 +5,7 @@ import EventHandler from '../../CommonUtils/eventHandler';
 import MainModel from '../../Main/store/MainModel';
 import CommonModal from '../../CommonModal/store/CommonModal'
 import ContentFolderModel from '../../Folder/store/EditFolderModel';
-import ContentTagModel from '../../Tag/store/ContentTagModel';
+import ContentTagModel from '../../Tag/store/EditTagModel';
 import AsyncRequest from '../../CommonStore/asyncRequest';
 import GS from '../../CommonStore/GSModel';
 import { message } from 'antd';
@@ -69,6 +69,7 @@ class CreateContentModel extends ContentModel {
   //调用服务器端的创建流程
   async asyncCreateProccess() {
     try {
+      console.log("ContentTagModel.data.selectedTags===>",ContentTagModel.data.selectedTags);
       let selectedTags = ContentTagModel.data.selectedTags;
       let tagIds = [];
       let tagNameArr = [];

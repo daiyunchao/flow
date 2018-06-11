@@ -13,7 +13,6 @@ import EditTag from '../../Tag/ui/EditTag';
 export default class MyMenu extends React.Component {
   constructor() {
     super();
-    Model.addUserLoginEvent();
   }
 
   clickMenu({ item, key, keypath }) {

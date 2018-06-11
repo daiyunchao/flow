@@ -44,6 +44,7 @@ class TagsModel {
             }
         }
         this.data.selectedTags = newSelectedTags;
+        console.log("this.data.selectedTags==>", this.data.selectedTags);
     }
 
     async getTagList() {

@@ -4,7 +4,7 @@ import CommHelper from '../../CommonUtils/commHelper';
 import EventHandler from '../../CommonUtils/eventHandler';
 import MainModel from '../../Main/store/MainModel';
 import ContentFolderModel from '../../Folder/store/EditFolderModel';
-import ContentTagModel from '../../Tag/store/ContentTagModel';
+import ContentTagModel from '../../Tag/store/EditTagModel';
 import AsyncRequest from '../../CommonStore/asyncRequest';
 import GS from '../../CommonStore/GSModel';
 import { message } from 'antd';

@@ -83,10 +83,10 @@ class MenuModel extends ModelBase {
       "fn": (type, typeKey) => {
         this.status.selectedType = type;
         this.status.selectedFolderId = typeKey;
-        if(type=="folder"){
+        if (type == "folder") {
           this.status.default_selected_menu = "folder_" + typeKey;
           this.status.default_open_key = "sub1";
-        }else if(type=="tag"){
+        } else if (type == "tag") {
           this.status.default_selected_menu = "tag_" + typeKey;
           this.status.default_open_key = "sub2";
         }
@@ -123,6 +123,7 @@ class MenuModel extends ModelBase {
         this.clickFirstProcessItem();
       }
     })
+    this.addUserLoginEvent();
   }
 
 
@@ -140,6 +141,7 @@ class MenuModel extends ModelBase {
     EventHandler.registerEvent({
       "key": "getUserInfo",
       "fn": () => {
+        console.log("get user Info event ==>");
         this.getMenuList();
         this.pageInitGetLastProcessList();
       }
