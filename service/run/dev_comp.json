@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "flow_v2",
+      "script": "app.js",
+      "watch": false,
+      "merge_logs": true,
+      "cwd": "/home/daiyc/myPrj/flow_v2",
+      "exec_mode": "fork_mode",
+      "args": [
+        "-e","develop_comp"
+      ],
+      "env": {
+        "API_PORT": "8850",
+        "HTTPS": "false",
+        "ServiceType":"flow_v2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "initial:before": {
+    "loopback#favicon": {}
+  },
+  "initial": {
+    "compression": {},
+    "cors": {
+      "params": {
+        "origin": true,
+        "credentials": true,
+        "maxAge": 86400
+      }
+    }
+  },
+  "session": {},
+  "auth": {},
+  "parse": {},
+  "routes:before": {
+    "./middleware/goindex": {
+      "enabled": false
+    }
+  },
+  "routes": {
+  },
+  "routes:after": {
+
+  },
+  "files": {
+    "loopback#static": {
+      "params": "$!../client",
+      "enabled": false
+    }
+  },
+  "final": {
+    "loopback#urlNotFound": {
+    }
+  },
+  "final:after": {
+    "strong-error-handler": {
+      "params": {
+         "debug": true,
+         "log": true
+       }
+    }
+  }
+}

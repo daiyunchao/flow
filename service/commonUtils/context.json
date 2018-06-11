@@ -1,0 +1,35 @@
+{
+  "namespace": "commonUtils",
+  "beans": [
+    {
+      "id": "common",
+      "func": "common",
+      "lazy": true,
+      "scope": "singleton"
+    },
+    {
+      "id": "lbapp",
+      "func": "lbapp",
+      "lazy": true,
+      "scope": "singleton"
+    },
+    {
+      "id": "emailHelper",
+      "func": "emailHelper",
+      "lazy": true,
+      "scope": "singleton"
+    },
+    {
+      "id": "random_id",
+      "func": "random_id",
+      "lazy": true,
+      "scope": "singleton"
+    },
+    {
+      "id": "errorHelper",
+      "func": "errorHelper",
+      "lazy": true,
+      "scope": "singleton"
+    }
+  ]
+}

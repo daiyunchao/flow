@@ -1,0 +1,37 @@
+{
+    "name": "FlowUsers",
+    "plural": "FlowUsers",
+    "base": "PersistedModel",
+    "strict": false,
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "userId": {
+            "type": "string",
+            "description": "ID"
+        },
+        "nickName": {
+            "type": "string",
+            "description": "昵称"
+        },
+        "email": {
+            "type": "string",
+            "description": "邮箱地址"
+        },
+        "pwd": {
+            "type": "string",
+            "description": "用户密码"
+        },
+        "isActivate": {
+            "type": "number",
+            "default":0,
+            "description": "是否被激活 1:已激活状态 0:未激活状态"
+        },
+        "createTime": {
+            "type": "number",
+            "description": "注册该用户的时间"
+        }
+    }
+}

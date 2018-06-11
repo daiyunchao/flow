@@ -1,0 +1,12 @@
+{
+    "name": "API",
+    "plural": "API",
+    "base": "PersistedModel",
+    "strict": false,
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+    }
+}

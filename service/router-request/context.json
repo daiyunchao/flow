@@ -1,0 +1,11 @@
+{
+  "namespace": "routerRequest",
+  "beans": [
+    {
+      "id": "indexRouterRequest",
+      "func": "indexRouterRequest",
+      "lazy": true,
+      "scope": "singleton"
+    }
+  ]
+}

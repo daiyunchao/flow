@@ -1,0 +1,17 @@
+{
+  "namespace": "config",
+  "beans": [
+    {
+      "id": "runtime",
+      "func": "runtime",
+      "lazy": true,
+      "scope": "singleton"
+    },
+    {
+      "id": "allconfig",
+      "func": "allconfig",
+      "lazy": true,
+      "scope": "singleton"
+    }
+  ]
+}

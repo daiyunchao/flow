@@ -1,0 +1,33 @@
+{
+    "name": "Folder",
+    "plural": "Folder",
+    "base": "PersistedModel",
+    "strict": false,
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "folderId": {
+            "type": "string",
+            "description": "ID"
+        },
+        "folderName": {
+            "type": "string",
+            "description": "文件夹的名称"
+        },
+        "createUserId": {
+            "type": "string",
+            "description": "创建人的ID"
+        },
+        "createTime": {
+            "type": "number",
+            "description": "创建时间"
+        },
+        "isDelete":{
+            "type":"number",
+            "default":0,
+            "description":"是否被删除1:是 0:否"
+        }
+    }
+}

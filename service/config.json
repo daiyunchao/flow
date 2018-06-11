@@ -1,0 +1,26 @@
+{
+  "restApiRoot": "/flow-process/api",
+  "host": "0.0.0.0",
+  "port": 8850,
+  "url": "https://0.0.0.0:8850",
+  "remoting": {
+    "context": false,
+    "rest": {
+      "normalizeHttpPath": false,
+      "xml": false
+    },
+    "json": {
+      "strict": false,
+      "limit": "10000kb"
+    },
+    "urlencoded": {
+      "extended": true,
+      "limit": "10000kb"
+    },
+    "cors": false,
+    "errorHandler": {
+      "debug": true
+    }
+  },
+  "legacyExplorer": false
+}

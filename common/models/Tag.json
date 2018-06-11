@@ -1,0 +1,38 @@
+{
+    "name": "Tag",
+    "plural": "Tag",
+    "base": "PersistedModel",
+    "strict": false,
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "tagId": {
+            "type": "string",
+            "description": "ID"
+        },
+        "tagName": {
+            "type": "string",
+            "description": "标签的名称"
+        },
+        "createUserId": {
+            "type": "string",
+            "description": "创建人的ID"
+        },
+        "createTime": {
+            "type": "number",
+            "description": "创建时间"
+        },
+        "hasFlowContentCount": {
+            "type": "number",
+            "default": 0,
+            "description": "该标签包含的文章数量,不存储"
+        },
+        "isDelete": {
+            "type": "number",
+            "default": 0,
+            "description": "是否被删除1:是 0:否"
+        }
+    }
+}

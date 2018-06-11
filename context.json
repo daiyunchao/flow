@@ -1,0 +1,9 @@
+{
+  "name": "myCodePackage",
+  "imports": [
+    "service/config/context.json",
+    "service/commonUtils/context.json",
+    "service/router/context.json",
+    "service/router-request/context.json"
+  ]
+}

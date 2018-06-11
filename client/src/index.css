@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+
+}
+html, body{
+  height: 100%;
+}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+body{font-size:12px;font-family: sans-serif;background:#fff;-webkit-text-size-adjust:100%;}
+
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+}
+
+.mainCon{
+  width: 100%;
+  }
+  .loginCon{
+      margin: 0 auto;
+      width:400px;
+      position: absolute;
+      top:20%;
+      left:40%;
+      padding:20px;
+      border:1px solid #ccc;
+      border-radius: 10px;
+  }
+  .registerCon{
+    margin: 0 auto;
+    width:500px;
+    position: absolute;
+    top:20%;
+    left:35%;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+    
+}
+  .loginItemConHead{
+      height:50px;
+      color:#ccc;
+      text-align: center;
+      font-weight: bold;
+  }
+  .loginItemConHead *{
+      display:inline-block;vertical-align:middle
+  }
+  .loginItemCon{
+      height: 60px;
+  }
+  .login-form-forgot{
+      float: right;
+  }
+  .login-form-button {
+      width: 100%;
+  }
+  .loginLogo{
+        text-align: center;
+        height:50px;
+        line-height: 50px;
+    }
+    .contentList{
+      background:rgba(250, 250, 250,0.6);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 12.5%;
+    }
+    .cotnentCon{
+        width:98%;
+        margin:0 auto;
+    }
+    .createFolderName{
+        margin-right: 20px;
+    }
+    .cotnentCon .ant-card-head{
+        background-color: rgba(255,255,255,0.1);
+    }
+    .contentCon .ant-menu-root{
+      overflow-y: scroll;
+      overflow-x: hidden;
+      height: 100%;
+    }
+  
+    .contentCon .ant-menu-root::-webkit-scrollbar{
+        width:3px;
+    }
+    .contentCon .ant-menu-root::-webkit-scrollbar-thumb{
+      background:#3DB6A4
+    }
+    .menu_{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+
+    .headerCon{
+      width:100%;
+      height:64px;
+      line-height: 64px;
+      transition: all .3s;
+      -webkit-transition: all .3s;
+      box-shadow: 0 2px 8px #c5c5ce;
+      background-color: rgba(220, 220, 220, 0.616);
+  }
+  .headerCon #search-box .anticon{
+      color:#fffaf2
+  }
+  
+  
+  #logo {
+      overflow: hidden;
+      padding-left: 40px;
+      float: left;
+      height: 64px;
+      line-height: 64px;
+      text-decoration: none;
+      white-space: nowrap;
+  }
+  #logo img {
+      height: 32px;
+      margin-right: 16px;
+  }
+  #logo img+img {
+      height: 16px;
+      position: relative;
+      top: 1px;
+  }
+  #search-box {
+      float: left;
+      padding-left: 16px;
+  }
+  #search-box .anticon {
+      color: #ced4d9;
+      position: relative;
+      top: .5px;
+  }
+  .algolia-autocomplete{
+      position: relative;
+      display: inline-block;
+      direction: ltr;
+      width:400px;
+  }
+  .contentListItem{
+  cursor: pointer;
+  padding-left: 20px;
+  }
+  .contentListItem:hover{
+      background: rgba(240,240,240,1);
+      }
+  .contentListItem > div{
+      font-size: 10px;
+  }
+  .ant-list-item-meta-description {
+      font-size: 10px;
+      line-height: 22px;
+  }
+  
+  .contentFont{
+    word-break: break-all;
+    word-wrap:break-word;
+    white-space:pre-wrap;
+      padding-left: 0px;
+      font-size:16px;
+      line-height: 1.5
+  }
+  .optItem{
+      padding-left:10px;
+  }
+  .contentBelongCon{
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+  }
+  .contentBelongConItem{
+      margin-bottom: 10px;
+  }
+  .contentBelongConItem > span{
+      margin-right: 15px;
+  }
+  .BelongConPropName{
+      width: 120px;
+      text-align: right;
+      padding-right: 15px;
+  }
+  .BelongConContent{
+      width: 400px;
+  }
+  .ant-card-head{
+      background-color: rgba(255, 255, 255,0.1)
+  }
+  .shareContentMain{
+      width:800px;
+      margin:0 auto;
+      background: rgba(255,255,255,0.7);
+  }

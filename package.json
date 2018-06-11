@@ -1,0 +1,48 @@
+{
+  "name": "flow_v2",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "pretest": "jshint ."
+  },
+  "dependencies": {
+    "argsparser": "0.0.6",
+    "async": "^1.4.2",
+    "bearcat": "^0.4.29",
+    "bunyan": "^1.5.1",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "excel-export": "^0.5.1",
+    "gm": "^1.23.0",
+    "lodash": "^4.13.1",
+    "log4js": "^0.6.26",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-connector-mongodb": "^1.13.3",
+    "loopback-connector-mysql": "^2.2.0",
+    "loopback-datasource-juggler": "^2.39.0",
+    "mobx": "^3.1.15",
+    "mobx-react": "^4.2.1",
+    "mocha": "^2.3.4",
+    "moment": "^2.11.1",
+    "mongodb": "^2.1.4",
+    "mout": "^0.11.0",
+    "multiparty": "^4.1.2",
+    "mysql": "^2.9.0",
+    "node-schedule": "^0.2.9",
+    "nodemailer": "^2.5.0",
+    "protobufjs": "^4.0.0",
+    "request": "^2.64.0",
+    "rt-mysql-galera-client": "^1.0.0",
+    "serve-favicon": "^2.0.1"
+  },
+  "optionalDependencies": {
+    "loopback-explorer": "^1.1.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "description": "myCodePackage"
+}

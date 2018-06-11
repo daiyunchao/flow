@@ -1,0 +1,17 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mycodepackage": {
+    "url": "mongodb://mongoAdmin:woshicc168./lp@192.168.5.105:27017/mycodepackage",
+    "database": "mycodepackage",
+    "name": "mycodepackage",
+    "connector": "mongodb",
+    "server": {
+      "auto_reconnect": true,
+      "reconnectTries": 100000,
+      "reconnectInterval": 10000
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "apps": [
+    {
+      "name": "myCodePackage_01",
+      "script": "app.js",
+      "watch": false,
+      "merge_logs": true,
+      "cwd": "/home/daiyunchao/Prj/MyCodePackage",
+      "exec_mode": "fork_mode",
+      "args": [
+        "-e","develop_home"
+      ],
+      "env": {
+        "API_PORT": "8849",
+        "HTTPS": "false",
+        "ServiceType":"myCodePackage"
+      }
+    }
+  ]
+}

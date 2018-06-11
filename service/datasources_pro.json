@@ -1,0 +1,26 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "localmongodb": {
+    "url": "mongodb://webcommonentitydbuser:oP7CeQe37Bix644dcdsds3Be@172.17.116.53:27017/webContentEntity",
+    "database": "webContentEntity",
+    "name": "localmongodb",
+    "connector": "mongodb",
+    "server": {
+      "auto_reconnect": true,
+      "reconnectTries": 100000,
+      "reconnectInterval": 10000
+    }
+  },
+  "mysql": {
+    "connector": "mysql",
+    "name": "localmongodb",
+    "database": "bbapidb",
+    "host": "172.17.116.51",
+    "username": "bbapiuser",
+    "password": "gl7wVb76xI910qWLkx5zb1pqY9",
+    "port": 3306
+  }
+}

@@ -1,0 +1,61 @@
+{
+    "name": "FlowContent",
+    "plural": "FlowContent",
+    "base": "PersistedModel",
+    "strict": false,
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "flowProcessId": {
+            "type": "string",
+            "description": "ID"
+        },
+        "title": {
+            "type": "string",
+            "description": "标题"
+        },
+        "content": {
+            "type": "string",
+            "description": "流程内容"
+        },
+        "folderId": {
+            "type": "string",
+            "description": "文件夹id"
+        },
+        "folderName": {
+            "type": "string",
+            "description": "文件夹名称,不存储"
+        },
+        "tagIds": {
+            "type": "string",
+            "description": "标签id逗号分隔字符串列表"
+        },
+        "tagNames": {
+            "type": "array",
+            "description": "标签名称列表,不存储"
+        },
+        "tags": {
+            "type": "array",
+            "description": "标签列表,不存储"
+        },
+        "userId": {
+            "type": "string",
+            "description": "创建人用户ID"
+        },
+        "isShared": {
+            "type": "number",
+            "description": "当前文档是否是被分享状态"
+        },
+        "createTime": {
+            "type": "number",
+            "description": "创建时间"
+        },
+        "isDelete": {
+            "type": "number",
+            "default": 0,
+            "description": "是否被删除1:是 0:否"
+        }
+    }
+}
