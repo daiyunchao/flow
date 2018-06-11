@@ -65,7 +65,10 @@ export default class EditContent extends React.Component {
                 }
                 extra={
                     <div>
-                        <a href="#" className="optItem">
+                        <a onClick={
+                            () => {
+                                Model.clickEditSaveBtn();
+                            }} className="optItem">
                             <Icon type="save" />
                             保存
                     </a>
